@@ -56,7 +56,7 @@
 
         KANA {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <29 30>;
+            key-positions = <30 31>;
         };
     };
 
@@ -85,10 +85,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp L       &kp U         &kp COMMA  &kp PERIOD                                &kp F            &kp W  &kp R              &kp Y            &kp P
-&kp E             &mt LALT I  &mt LSHIFT A  &kp O      &kp MINUS   &trans           &trans       &kp K            &kp T  &mt RIGHT_SHIFT N  &mt RIGHT_ALT S  &kp H
-&kp LEFT_CONTROL  &kp Z       &kp X         &kp C      &kp B       &trans           &trans       &kp G            &kp D  &kp M              &kp J            &mt RIGHT_CONTROL B
-&trans            &trans      &trans        &trans     &lt 4 TAB   &lt 3 SPACE      &lt 1 ENTER  &lt 2 BACKSPACE                                             &trans
+&kp Q             &kp L       &kp U         &kp COMMA  &kp PERIOD                                &kp F            &kp W  &kp R              &kp Y           &kp P
+&kp E             &mt LALT I  &mt LSHIFT A  &kp O      &kp MINUS   &trans           &trans       &kp K            &kp T  &mt RIGHT_SHIFT N  &mt LEFT_ALT S  &kp H
+&kp LEFT_CONTROL  &kp Z       &kp X         &kp C      &kp V       &trans           &trans       &kp G            &kp D  &kp M              &kp J           &mt LEFT_CONTROL B
+&trans            &trans      &trans        &trans     &lt 4 TAB   &lt 3 SPACE      &lt 1 ENTER  &lt 2 BACKSPACE                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -96,7 +96,7 @@
 
         FUNCTION {
             bindings = <
-&kp F1  &kp F2           &kp F3             &kp F4   &kp TILDE                      &mkp MB4  &kp F2    &kp F3        &kp F4          &kp F5
+&kp F1  &kp F2           &kp F3             &kp F4   &kp TILDE                      &mkp MB4  &kp F2    &kp PIPE      &kp GRAVE       &kp CARET
 &kp F5  &mt LEFT_ALT F6  &mt LEFT_SHIFT F7  &kp F8   &kp AT     &trans      &trans  &mkp MB5  &kp LEFT  &kp UP_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW
 &kp F9  &kp F10          &kp F11            &kp F12  &kp SLASH  &trans      &trans  &trans    &kp HOME  &kp PAGE_UP   &kp PAGE_DOWN   &kp END
 &trans  &trans           &trans             &trans   &trans     &trans      &trans  &trans                                            &trans
@@ -125,10 +125,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans          &trans        &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1        &mkp MB3      &mkp MB2        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                &trans
             >;
         };
 
