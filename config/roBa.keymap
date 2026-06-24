@@ -94,7 +94,7 @@
 &kp Q             &kp L       &kp U         &kp COMMA  &kp PERIOD                                &kp F            &kp W  &kp R              &kp Y           &kp P
 &kp E             &mt LALT I  &mt LSHIFT A  &kp O      &kp MINUS   &none            &none        &kp K            &kp T  &mt RIGHT_SHIFT N  &mt LEFT_ALT S  &kp H
 &kp LEFT_CONTROL  &kp Z       &kp X         &kp C      &kp V       &none            &none        &kp G            &kp D  &kp M              &kp J           &mt LEFT_CONTROL B
-&none             &none       &none         &none      &lt 2 TAB   &lt 1 SPACE      &lt 3 ENTER  &lt 4 BACKSPACE                                            &none
+&none             &none       &none         &none      &lt 2 TAB   &lt 1 SPACE      &lt 3 ENTER  &lt 4 BACKSPACE                                            &sl 6
             >;
         };
 
