@@ -15,9 +15,6 @@
             ;
 };
 
-#include <input/processors.dtsi>
-
-
 / {
     trackball_listener: trackball_listener {
         status = "okay";
