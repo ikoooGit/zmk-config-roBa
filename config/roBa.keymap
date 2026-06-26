@@ -11,6 +11,7 @@
 
 &trackball {
     // automouse-layer = <4>;
+
     scroll-layers = <5>;
 
     // arrows {
@@ -84,6 +85,24 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        comma_morph: comma_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_MORPH";
+            bindings = <&kp COMMA>, <&kp EXCL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        period_morph: period_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PERIOD_MORPH";
+            bindings = <&kp PERIOD>, <&kp QUESTION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -91,10 +110,10 @@
 
         default_layer {
             bindings = <
-&none      &kp L       &kp U         &kp COMMA  &kp PERIOD                                &kp F            &kp W  &kp R              &kp Y           &none
-&kp Q      &mt LALT I  &mt LSHIFT A  &kp O      &kp MINUS   &none            &none        &kp K            &kp T  &mt RIGHT_SHIFT N  &mt LEFT_ALT S  &kp P
-&kp E      &kp Z       &kp X         &kp C      &kp V       &none            &none        &kp G            &kp D  &kp M              &kp J           &kp H
-&kp LCTRL  &none       &none         &none      &lt 2 TAB   &lt 1 SPACE      &lt 3 ENTER  &lt 4 BACKSPACE                                            &lt 6 B
+&none      &kp L       &kp U         &comma_morph  &period_morph                                &kp F            &kp W  &kp R              &kp Y           &none
+&kp Q      &mt LALT I  &mt LSHIFT A  &kp O         &kp MINUS      &none            &none        &kp K            &kp T  &mt RIGHT_SHIFT N  &mt LEFT_ALT S  &kp P
+&kp E      &kp Z       &kp X         &kp C         &kp V          &none            &none        &kp G            &kp D  &kp M              &kp J           &kp H
+&kp LCTRL  &none       &none         &none         &lt 2 TAB      &lt 1 SPACE      &lt 3 ENTER  &lt 4 BACKSPACE                                            &lt 6 B
             >;
         };
 
@@ -118,10 +137,10 @@
 
         FUNCTION_ARROW {
             bindings = <
-&none   &kp F2           &kp F3             &kp F4   &kp TILDE                    &none     &kp BACKSLASH  &kp PIPE      &kp GRAVE        &none
-&kp F1  &mt LEFT_ALT F6  &mt LEFT_SHIFT F7  &kp F8   &kp AT     &none      &none  &mkp MB4  &kp LEFT       &kp UP_ARROW  &kp RIGHT_ARROW  &kp CARET
-&kp F5  &kp F10          &kp F11            &kp F12  &kp SLASH  &none      &none  &mkp MB5  &kp HOME       &kp PAGE_UP   &kp PAGE_DOWN    &kp RIGHT_ARROW
-&kp F9  &none            &none              &none    &none      &none      &none  &none                                                   &kp END
+&none   &kp F2           &kp F3             &kp F4   &kp TILDE                    &none     &kp BACKSLASH  &kp PIPE      &kp GRAVE       &none
+&kp F1  &mt LEFT_ALT F6  &mt LEFT_SHIFT F7  &kp F8   &kp AT     &none      &none  &mkp MB4  &kp LEFT       &kp UP_ARROW  &kp DOWN_ARROW  &kp CARET
+&kp F5  &kp F10          &kp F11            &kp F12  &kp SLASH  &none      &none  &mkp MB5  &kp HOME       &kp PAGE_UP   &kp PAGE_DOWN   &kp RIGHT_ARROW
+&kp F9  &none            &none              &none    &none      &none      &none  &none                                                  &kp END
             >;
         };
 
