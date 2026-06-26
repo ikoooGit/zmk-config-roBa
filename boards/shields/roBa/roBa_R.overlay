@@ -20,12 +20,12 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_temp_layer 4 10000>; 
+        input-processors = <&zip_temp_layer 4 3000>; 
     };
 };
 
 &zip_temp_layer {
-    require-prior-idle-ms = <200>;
+    require-prior-idle-ms = <500>;
     excluded-positions = <18 19 20 34>;
 };
 
