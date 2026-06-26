@@ -91,41 +91,41 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp L       &kp U         &kp COMMA  &kp PERIOD                                &kp F            &kp W  &kp R              &kp Y           &kp P
-&kp E             &mt LALT I  &mt LSHIFT A  &kp O      &kp MINUS   &none            &none        &kp K            &kp T  &mt RIGHT_SHIFT N  &mt LEFT_ALT S  &kp H
-&kp LEFT_CONTROL  &kp Z       &kp X         &kp C      &kp V       &none            &none        &kp G            &kp D  &kp M              &kp J           &mt LEFT_CONTROL B
-&none             &none       &none         &none      &lt 2 TAB   &lt 1 SPACE      &lt 3 ENTER  &lt 4 BACKSPACE                                            &sl 6
+&none      &kp L       &kp U         &kp COMMA  &kp PERIOD                                &kp F            &kp W  &kp R              &kp Y           &none
+&kp Q      &mt LALT I  &mt LSHIFT A  &kp O      &kp MINUS   &none            &none        &kp K            &kp T  &mt RIGHT_SHIFT N  &mt LEFT_ALT S  &kp P
+&kp E      &kp Z       &kp X         &kp C      &kp V       &none            &none        &kp G            &kp D  &kp M              &kp J           &kp H
+&kp LCTRL  &none       &none         &none      &lt 2 TAB   &lt 1 SPACE      &lt 3 ENTER  &lt 4 BACKSPACE                                            &lt 6 B
             >;
         };
 
         NUM_SYMBOL {
             bindings = <
-&kp PERCENT      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK                      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN      &kp GREATER_THAN  &kp DOLLAR
-&kp EQUAL        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS      &trans      &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp HASH
-&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp SLASH     &trans      &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON          &kp SEMICOLON     &kp AMPERSAND
-&trans           &trans           &trans           &trans           &trans        &trans      &trans  &trans                                                                            &trans
+&trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK                      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN      &kp GREATER_THAN  &trans
+&kp PERCENT   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS      &trans      &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp DOLLAR
+&kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &trans      &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON          &kp SEMICOLON     &kp HASH
+&kp NUMBER_0  &trans        &trans        &trans        &trans        &trans      &trans  &trans                                                                            &kp AMPERSAND
             >;
         };
 
         CONFIG {
             bindings = <
-&trans  &trans           &trans            &trans             &rgb_ug RGB_TOG                           &none   &none           &none         &none           &none
-&trans  &kp K_PREV       &kp K_PLAY_PAUSE  &kp K_NEXT         &kp C_BRIGHTNESS_INC  &trans      &trans  &none   &kp SCROLLLOCK  &kp CAPS      &kp KP_NUMLOCK  &kp PRINTSCREEN
-&trans  &kp C_VOLUME_UP  &kp K_MUTE        &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans      &trans  &none   &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT
-&trans  &trans           &trans            &trans             &trans                &trans      &trans  &trans                                                &trans
+&trans  &trans           &trans            &trans             &rgb_ug RGB_TOG                           &trans  &trans          &trans    &trans          &trans
+&trans  &kp K_PREV       &kp K_PLAY_PAUSE  &kp K_NEXT         &kp C_BRIGHTNESS_INC  &trans      &trans  &trans  &kp SCROLLLOCK  &kp CAPS  &kp KP_NUMLOCK  &kp PRINTSCREEN
+&trans  &kp C_VOLUME_UP  &kp K_MUTE        &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans      &trans  &trans  &trans          &trans    &trans          &trans
+&trans  &trans           &trans            &trans             &trans                &trans      &trans  &trans                                            &trans
             >;
         };
 
         FUNCTION_ARROW {
             bindings = <
-&kp F1  &kp F2           &kp F3             &kp F4   &kp TILDE                      &trans    &trans    &kp PIPE      &kp GRAVE        &kp CARET
-&kp F5  &mt LEFT_ALT F6  &mt LEFT_SHIFT F7  &kp F8   &kp AT     &trans      &trans  &mkp MB4  &kp LEFT  &kp UP_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW
-&kp F9  &kp F10          &kp F11            &kp F12  &kp SLASH  &trans      &trans  &mkp MB5  &kp HOME  &kp PAGE_UP   &kp PAGE_DOWN    &kp END
-&trans  &trans           &trans             &trans   &trans     &trans      &trans  &trans                                             &trans
+&trans  &kp F2           &kp F3             &kp F4   &kp TILDE                      &trans    &kp BACKSLASH  &kp PIPE      &kp GRAVE        &trans
+&kp F1  &mt LEFT_ALT F6  &mt LEFT_SHIFT F7  &kp F8   &kp AT     &trans      &trans  &mkp MB4  &kp LEFT       &kp UP_ARROW  &kp RIGHT_ARROW  &kp CARET
+&kp F5  &kp F10          &kp F11            &kp F12  &kp SLASH  &trans      &trans  &mkp MB5  &kp HOME       &kp PAGE_UP   &kp PAGE_DOWN    &kp RIGHT_ARROW
+&kp F9  &trans           &trans             &trans   &trans     &trans      &trans  &trans                                                  &kp END
             >;
         };
 
-        ADDITONAL {
+        undefined {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
@@ -139,19 +139,19 @@
 &trans        &trans        &trans            &trans        &rgb_ug RGB_TOG                           &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
 &trans        &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT    &kp C_BRIGHTNESS_INC  &trans      &trans  &kp CAPSLOCK    &mkp MB1        &kp CAPS      &kp KP_NUMLOCK  &kp PRINTSCREEN
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4          &trans      &trans  &kp KP_NUMLOCK  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT
-&trans        &trans        &trans            &trans        &trans                &trans      &trans  &trans                                                        &trans
+&bt BT_SEL 0  &trans        &trans            &trans        &trans                &trans      &trans  &trans                                                        &trans
             >;
         };
 
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans          &trans        &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1        &mkp MB3      &mkp MB2        &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1        &mkp MB3      &mkp MB2        &msc SCRL_RIGHT
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp 0 0>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
     };
 };
