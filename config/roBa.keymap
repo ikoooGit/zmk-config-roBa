@@ -108,19 +108,19 @@
 
         default_layer {
             bindings = <
-&none      &kp L       &kp U         &comma_morph  &period_morph                                &kp F            &kp W  &kp R              &kp Y           &none
-&kp Q      &mt LALT I  &mt LSHIFT A  &kp O         &kp MINUS      &none            &none        &kp K            &kp T  &mt RIGHT_SHIFT N  &mt LEFT_ALT S  &kp P
-&kp E      &kp Z       &kp X         &kp C         &kp V          &none            &none        &kp G            &kp D  &kp M              &kp J           &kp H
-&kp LCTRL  &none       &none         &none         &lt 2 TAB      &lt 1 SPACE      &lt 3 ENTER  &lt 4 BACKSPACE                                            &lt 6 B
+&kp Q      &kp L       &kp U         &comma_morph  &period_morph                                &kp F            &kp W  &kp R              &kp Y           &kp P
+&kp E      &mt LALT I  &mt LSHIFT A  &kp O         &kp MINUS      &none            &none        &kp K            &kp T  &mt RIGHT_SHIFT N  &mt LEFT_ALT S  &kp H
+&kp LCTRL  &kp Z       &kp X         &kp C         &kp V          &none            &none        &kp G            &kp D  &kp M              &kp J           &kp B
+&none      &none       &none         &none         &lt 2 TAB      &lt 1 SPACE      &lt 3 ENTER  &lt 4 BACKSPACE                                            &lt 6 B
             >;
         };
 
         NUM_SYMBOL {
             bindings = <
-&none         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK                        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN      &kp GREATER_THAN  &none
-&kp PERCENT   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS      &none      &none      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp DOLLAR
-&kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &none      &none      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON          &kp SEMICOLON     &kp HASH
-&kp NUMBER_0  &none         &none         &none         &none         &none      &kp ENTER  &kp DELETE                                                                        &kp AMPERSAND
+&kp PERCENT   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK                        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN      &kp GREATER_THAN  &kp DOLLAR
+&kp EQUAL     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS      &none      &none      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp HASH
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &none      &none      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON          &kp SEMICOLON     &kp AMPERSAND
+&none         &none         &none         &none         &none         &none      &kp ENTER  &kp DELETE                                                                        &none
             >;
         };
 
@@ -135,10 +135,10 @@
 
         FUNCTION_ARROW {
             bindings = <
-&none   &kp F2           &kp F3             &kp F4   &kp TILDE                    &none     &kp BACKSLASH  &kp PIPE      &kp GRAVE       &none
-&kp F1  &mt LEFT_ALT F6  &mt LEFT_SHIFT F7  &kp F8   &kp AT     &none      &none  &mkp MB4  &kp LEFT       &kp UP_ARROW  &kp DOWN_ARROW  &kp CARET
-&kp F5  &kp F10          &kp F11            &kp F12  &kp SLASH  &none      &none  &mkp MB5  &kp HOME       &kp PAGE_UP   &kp PAGE_DOWN   &kp RIGHT_ARROW
-&kp F9  &none            &none              &none    &none      &none      &none  &none                                                  &kp END
+&kp F1  &kp F2           &kp F3             &kp F4   &kp TILDE                    &none     &kp BACKSLASH  &kp PIPE      &kp GRAVE       &kp CARET
+&kp F5  &mt LEFT_ALT F6  &mt LEFT_SHIFT F7  &kp F8   &kp AT     &none      &none  &mkp MB4  &kp LEFT       &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp F9  &kp F10          &kp F11            &kp F12  &kp SLASH  &none      &none  &mkp MB5  &kp HOME       &kp PAGE_UP   &kp PAGE_DOWN   &kp END
+&none   &none            &none              &none    &none      &none      &none  &none                                                  &none
             >;
         };
 
@@ -154,9 +154,9 @@
         BLUETOOTH {
             bindings = <
 &none         &none         &none             &none         &rgb_ug RGB_TOG                         &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
-&none         &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT    &kp C_BRIGHTNESS_INC  &none      &none  &kp CAPSLOCK    &mkp MB1        &kp CAPS      &kp KP_NUMLOCK  &kp PRINTSCREEN
+&none         &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT    &kp C_BRIGHTNESS_INC  &none      &none  &none           &mkp MB1        &kp CAPS      &kp KP_NUMLOCK  &kp PRINTSCREEN
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4          &none      &none  &kp KP_NUMLOCK  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT
-&bt BT_SEL 0  &none         &none             &none         &none                 &none      &none  &none                                                         &none
+&none         &none         &none             &none         &none                 &none      &none  &none                                                         &none
             >;
         };
 
